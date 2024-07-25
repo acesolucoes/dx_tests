@@ -37,6 +37,7 @@ macro(ADD_SDL_SAMPLE target sources)
 endmacro(ADD_SDL_SAMPLE target)
 
 add_subdirectory(simple_dx_sdl_test)
+add_subdirectory(simple_dx_sdl2)
 
 if(MSVC)
     add_compile_options(CL=/MP)
