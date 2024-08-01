@@ -37,6 +37,7 @@ private:
     ID3D11UnorderedAccessView*  g_pBufResultUAV = nullptr;
 
     std::ofstream &m_logger;
+    bool confirmed = false;
 
 public:
     D3D11Render(std::ofstream &output);
@@ -44,6 +45,7 @@ public:
     void ProcessDeviceEvent(UnityGfxDeviceEventType type, IUnityInterfaces* interfaces);
     void setComputeBuffer(void *buffer);
     bool checkIfRanSuccessfully();
+    bool checkSuccess(){ return confirmed; }
 
 private:   
     void createResources();

@@ -88,12 +88,38 @@ static void UNITY_INTERFACE_API OnGraphicsDeviceEvent(UnityGfxDeviceEventType ev
 	}
 }
 
+static void UNITY_INTERFACE_API OnRenderEvent(int eventID)
+{
+	if( !d3dRender) return;
+	
+	if( eventID == 1) {
+		d3dRender->ProcessDeviceEvent(kUnityGfxDeviceEventInitialize, s_UnityInterfaces);
+	} else if( eventID == 2) {
+		d3dRender->checkIfRanSuccessfully();
+	} 
+}
+
+extern "C" UnityRenderingEvent 
+        UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API GetRenderEventFunc()
+{
+    return OnRenderEvent;
+}
+
 extern "C" void UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API Initialize (void *data) { 
 	output << "INITIALIZING\n" << std::flush;
 	d3dRender->setComputeBuffer(data);
 	d3dRender->ProcessDeviceEvent(kUnityGfxDeviceEventInitialize, s_UnityInterfaces); 
 }
 
+extern "C" void UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API SetComputeBuffer (void *data) { 
+	output << "SETTING COMPUTE BUFFER\n" << std::flush;
+	d3dRender->setComputeBuffer(data); 
+}
+
 extern "C" bool UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API CheckRunning () { 
 	return d3dRender->checkIfRanSuccessfully();
+}
+
+extern "C" bool UNITY_INTERFACE_EXPORT UNITY_INTERFACE_API CheckSuccess () { 
+	return d3dRender->checkSuccess();
 }

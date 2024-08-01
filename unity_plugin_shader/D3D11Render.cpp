@@ -214,16 +214,7 @@ bool D3D11Render::checkIfRanSuccessfully() {
     // Verify that if Compute Shader has done right
     m_logger << "Verifying against CPU result...\n" << std::flush;
     bool bSuccess = true;
-    // for (int i = 0; i < NUM_ELEMENTS; ++i)
-    //     if ((p[i].i != g_vBuf0[i].i + g_vBuf1[i].i)
-    //         || (p[i].f != g_vBuf0[i].f + g_vBuf1[i].f)
-    //         )
-    //     {
-    //         m_logger << "failure\n" << std::flush;
-    //         bSuccess = false;
-
-    //         break;
-    //     }
+    
     if (bSuccess)
         m_logger << "succeeded\n" << std::flush;
 
