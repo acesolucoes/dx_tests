@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>E:\projetos\C\dx_tests\OlympusEngine\build2\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\projetos\C\dx_tests\OlympusEngine\build2\bin\Debug\Episode1.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\projetos\C\dx_tests\OlympusEngine\build2\bin\Debug\Episode2.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\projetos\C\dx_tests\OlympusEngine\build2\bin\Debug\Olympus.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\projetos\C\dx_tests\OlympusEngine\build2\bin\Debug\Episode3.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\projetos\C\dx_tests\OlympusEngine\build2\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

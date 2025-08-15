@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\projetos\C\dx_tests\OlympusEngine\build2\CMakeFiles\eb984e0e8f369eeac32fd0b6a4780a85\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{26C906E0-B3AC-324B-B8D5-29DF5E8E1033}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^E:\PROJETOS\C\DX_TESTS\OLYMPUSENGINE\CMAKELISTS.TXT
+setlocal
+"E:\Program Files\CMake\bin\cmake.exe" -SE:/projetos/C/dx_tests/OlympusEngine -BE:/projetos/C/dx_tests/OlympusEngine/build2 --check-stamp-file E:/projetos/C/dx_tests/OlympusEngine/build2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

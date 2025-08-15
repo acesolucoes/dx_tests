@@ -48,6 +48,10 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "sstream": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "d3d12.h": "c",
+        "d3dcompiler.h": "c",
+        "d3d12shader.h": "c",
+        "limits.h": "c"
     }
 }

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\projetos\C\dx_tests\OlympusEngine\build2\CMakeFiles\Episode3.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\projetos\C\dx_tests\OlympusEngine\src\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\projetos\C\dx_tests\OlympusEngine\src\WinMainEpisode3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\projetos\C\dx_tests\OlympusEngine\src\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\projetos\C\dx_tests\OlympusEngine\src\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\projetos\C\dx_tests\OlympusEngine\src\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\projetos\C\dx_tests\OlympusEngine\build2\CMakeFiles\Episode3.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\projetos\C\dx_tests\OlympusEngine\build2\CMakeFiles\Episode3.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\projetos\C\dx_tests\OlympusEngine\build2\CMakeFiles\Episode3.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\projetos\C\dx_tests\OlympusEngine\build2\CMakeFiles\Episode3.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\projetos\C\dx_tests\OlympusEngine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\projetos\C\dx_tests\OlympusEngine\resources\myresource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CBA485EE-068E-3F5F-917A-34184A638FEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{4B90F5C6-030E-3AE8-946F-D0715F3ADA28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{17E8DC12-4627-3DD0-8382-EA89370DE13E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

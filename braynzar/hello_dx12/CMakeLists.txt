@@ -1,0 +1,29 @@
+cmake_minimum_required(VERSION 3.20)
+
+# Project name
+project(HelloDX12)
+
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Define the source file
+set(SOURCES Main.cpp stdafx.h)
+
+# find_package(DirectX11 REQUIRED)
+
+# Add the executable
+add_executable(${PROJECT_NAME} WIN32 ${SOURCES})
+
+target_compile_definitions(${PROJECT_NAME} PUBLIC _USE_MATH_DEFINES)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE d3d12.lib dxgi.lib d3dcompiler.lib )
+target_compile_definitions(${PROJECT_NAME} PRIVATE _UNICODE UNICODE)
+
+# add_custom_command(
+#     TARGET ${PROJECT_NAME} POST_BUILD
+#     COMMAND ${CMAKE_COMMAND} -E copy_if_different
+#     "${PROJECT_SOURCE_DIR}/ExampleCompute.hlsl"
+#     "$<TARGET_FILE_DIR:${PROJECT_NAME}>"
+# )
