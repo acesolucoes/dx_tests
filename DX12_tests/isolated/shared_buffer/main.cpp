@@ -1,6 +1,7 @@
 #include <windows.h>
 #include <d3d12.h>
 #include <dxgi1_4.h>
+#include <d3dcompiler.h>
 #include <wrl.h>
 #include <iostream>
 
@@ -9,6 +10,11 @@ using namespace Microsoft::WRL;
 void CreateAndShareBuffer() {
     // Initialize COM
     CoInitialize(nullptr);
+
+    ComPtr<ID3D12Debug> debugController;
+    if (SUCCEEDED(D3D12GetDebugInterface(IID_PPV_ARGS(&debugController)))) {
+        debugController->EnableDebugLayer();
+    }
 
     // Create two devices
     ComPtr<IDXGIFactory4> factory;
@@ -23,8 +29,8 @@ void CreateAndShareBuffer() {
     factory->EnumAdapters1(1, &adapter2); // Assuming at least two adapters
 
     ComPtr<ID3D12Device> device1, device2;
-    D3D12CreateDevice(adapter1.Get(), D3D_FEATURE_LEVEL_11_0, IID_PPV_ARGS(&device1));
-    D3D12CreateDevice(adapter2.Get(), D3D_FEATURE_LEVEL_11_0, IID_PPV_ARGS(&device2));
+    D3D12CreateDevice(adapter1.Get(), D3D_FEATURE_LEVEL_12_1, IID_PPV_ARGS(&device1));
+    D3D12CreateDevice(adapter2.Get(), D3D_FEATURE_LEVEL_12_1, IID_PPV_ARGS(&device2));
 
     // Describe and create a shared buffer
     D3D12_HEAP_PROPERTIES heapProps = {};
