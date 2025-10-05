@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(3dgep)
 
 if (NOT WIN32)
-    MESSAGE(FATAL_ERROR "DX12 examplos must be compiled in Windows")
+    MESSAGE(FATAL_ERROR "DX12 examples must be compiled in Windows")
 endif()
 
 # Set the C++ standard
@@ -28,5 +28,6 @@ macro(add_dx12_executable NAME)
     target_compile_definitions(${NAME} PRIVATE WIN32_LEAN_AND_MEAN UNICODE _UNICODE WIN32 _WIN32)
 endmacro()
 
-add_dx12_executable(Dx12SharedBuffers main.cpp Helpers.h)
+add_dx12_executable(Dx12Tut1 main.cpp Helpers.h)
+add_dx12_executable(Dx12Tut2 main_tut2.cpp Helpers.h)
 
